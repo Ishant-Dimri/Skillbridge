@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Showcase | SkillBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-layout">
+    <aside class="sidebar">
+        <h2 class="text-gradient">SkillBridge</h2>
+        <nav>
+            <a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
+            <a href="roadmap.html"><i class="fa-solid fa-map"></i> Roadmap</a>
+            <a href="projects.html" class="active"><i class="fa-solid fa-folder"></i> Projects</a>
+            <a href="upload.html"><i class="fa-solid fa-upload"></i> Upload</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 2rem;">
+            <h1 class="text-gradient">Community Projects</h1>
+            <a href="upload.html" class="btn btn-primary">+ Submit Project</a>
+        </div>
+
+        <div class="project-grid" id="project-container">
+            <div class="glass-card project-card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="Project">
+                <h3>E-Commerce Dashboard</h3>
+                <p style="color:var(--text-muted); font-size:0.9rem">A full-stack commerce solution built with React and Firebase.</p>
+                <div style="margin: 1rem 0;">
+                    <span class="tag">React</span><span class="tag">Firebase</span>
+                </div>
+                <a href="#" class="btn btn-outline" style="width:100%; text-align:center">View Demo</a>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="projects.js"></script>
+</body>
+</html>
