@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel | SkillBridge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-layout">
+    <aside class="sidebar">
+        <h2 class="text-gradient">SkillAdmin</h2>
+        <nav>
+            <a href="dashboard.html">User View</a>
+            <a href="admin.html" class="active">Management</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h1 class="text-gradient">Admin Management</h1>
+        
+        <div class="stats-grid">
+            <div class="glass-card">
+                <h4>Total Users</h4>
+                <h2>1,284</h2>
+            </div>
+            <div class="glass-card">
+                <h4>Projects Pending</h4>
+                <h2>14</h2>
+            </div>
+        </div>
+
+        <div class="glass-card" style="margin-top: 2rem;">
+            <h3>Push New Weekly Task</h3>
+            <form id="admin-task-form" style="margin-top:1rem;">
+                <input type="text" class="form-control" placeholder="Task Title..." style="margin-bottom:1rem">
+                <input type="number" class="form-control" placeholder="Points Value (e.g. 10)" style="margin-bottom:1rem">
+                <button class="btn btn-primary">Broadcast Task</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
