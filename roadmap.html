@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="dashboard-layout">
-    <aside class="sidebar">
-        <h2 class="text-gradient">SkillBridge</h2>
-        <nav>
-            <a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a>
-            <a href="roadmap.html" class="active"><i class="fa-solid fa-map"></i> Roadmap</a>
-            <a href="projects.html"><i class="fa-solid fa-folder"></i> Projects</a>
-            <a href="upload.html"><i class="fa-solid fa-upload"></i> Upload</a>
-        </nav>
-    </aside>
+<aside class="sidebar">
+    <h2 class="text-gradient" style="margin-bottom: 2rem;">SkillBridge</h2>
+    <ul style="list-style: none; display: flex; flex-direction: column; gap: 1rem;">
+        <li><a href="index.html" style="color: var(--text-muted); text-decoration: none;"><i class="fa-solid fa-house-user"></i> Landing Page</a></li>
+        <hr style="border: 0.5px solid var(--glass-border); margin: 0.5rem 0;">
+        
+        <li><a href="dashboard.html" style="color: #fff; text-decoration: none;"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+        <li><a href="roadmap.html" style="color: #fff; text-decoration: none;"><i class="fa-solid fa-map"></i> Roadmaps</a></li>
+        <li><a href="projects.html" style="color: #fff; text-decoration: none;"><i class="fa-solid fa-code"></i> Project Gallery</a></li>
+        <li><a href="admin.html" style="color: #fff; text-decoration: none;"><i class="fa-solid fa-user-shield"></i> Admin Panel</a></li>
+    </ul>
+    
+    <button id="logout-btn" class="btn btn-outline" style="margin-top: 3rem; width: 100%;">Logout</button>
+</aside>
 
     <main class="main-content">
         <h1 class="text-gradient">Career Path: Full-Stack Engineer</h1>
